@@ -14,7 +14,7 @@ import java.util.Map;
 import java.util.Properties;
 
 /** 
- *
+ * shiro配置
  * @author: kid  2018/9/19 16:21
  */ 
 @Configuration
