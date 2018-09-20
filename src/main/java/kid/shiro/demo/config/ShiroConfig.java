@@ -1,5 +1,6 @@
 package kid.shiro.demo.config;
 
+import kid.shiro.demo.debug.DebugAnnotation;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
@@ -18,7 +19,9 @@ import java.util.Properties;
  * @author: kid  2018/9/19 16:21
  */ 
 @Configuration
+
 public class ShiroConfig {
+    @DebugAnnotation
     @Bean
     public ShiroFilterFactoryBean shirFilter(SecurityManager securityManager) {
         System.out.println("ShiroConfiguration.shirFilter()");
